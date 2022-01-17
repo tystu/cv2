@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+    @apply text-slate-900 font-medium underline decoration-dotted underline-offset-2 decoration-orange-600;
+}
