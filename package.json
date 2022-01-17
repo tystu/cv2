@@ -1,0 +1,24 @@
+{
+  "name": "cv2",
+  "version": "1.0.0",
+  "description": "My personal cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tystu/cv2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tystu/cv2/issues"
+  },
+  "homepage": "https://github.com/tystu/cv2#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "ejs": "^3.1.6",
+    "tailwindcss": "^3.0.15"
+  }
+}
