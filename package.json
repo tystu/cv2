@@ -4,7 +4,8 @@
   "description": "My personal cv",
   "main": "index.js",
   "scripts": {
-    "update-ghpages": "git subtree push --prefix dist origin gh-pages"
+    "push-ghpages": "git subtree push --prefix dist origin gh-pages",
+    "build": "npx @11ty/eleventy && npx tailwindcss -i src/assets/css/app.css -o dist/assets/css/app.css"
   },
   "repository": {
     "type": "git",
