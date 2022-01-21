@@ -477,6 +477,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -485,12 +490,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mr-4 {
@@ -499,10 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
-}
-
-.table {
-  display: table;
 }
 
 .h-1 {
@@ -523,6 +524,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-32 {
   width: 8rem;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-col {
@@ -552,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -562,6 +575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .italic {
   font-style: italic;
+}
+
+.leading-loose {
+  line-height: 2;
 }
 
 .text-orange-600 {
@@ -587,9 +604,14 @@ a {
           text-decoration-line: underline;
   -webkit-text-decoration-color: #ea580c;
           text-decoration-color: #ea580c;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-  text-underline-offset: 2px;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
 }
 
 h1 {
@@ -599,6 +621,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
@@ -606,6 +629,16 @@ h2 {
 
 p {
   max-width: 65ch;
+}
+
+.before\:content-\[\'\2022\'\]::before {
+  --tw-content: '•';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\2022\'\]::after {
+  --tw-content: '•';
+  content: var(--tw-content);
 }
 
 @media (min-width: 640px) {
@@ -632,5 +665,10 @@ p {
   .lg\:bg-slate-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-slate-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 250 252 / var(--tw-bg-opacity));
   }
 }
