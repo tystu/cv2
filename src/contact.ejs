@@ -1,6 +1,5 @@
-<%- include('_partials/_head', { title: "Contact - Tyler's Personal Website" }) %> 
+<%- include('_partials/_head', { title: "Contact - Tyler's Personal Website", root: "../" }) %>
 
-<body>
     <h1>Contact Me</h1>
     <ul>
         <li>Phone: 801-750-0923</li>
@@ -9,19 +8,21 @@
     </ul>
     <hr>
     <p>
-        <form action="mailto:tstuver2000@gmail.com" enctype="text/plain">
-            <label>Your Name: </label>
-            <input type="text" name="yourName">
-            <br>
-            <label>Your Email: </label>
-            <input type="email" name="yourEmail">
-            <br>
-            <label>Your Message: </label><br>
-            <textarea rows="5" cols="33" name="yourMessage"></textarea>
-            <br>
-            <input type="submit">
-        </form>
+    <form action="mailto:tstuver2000@gmail.com" enctype="text/plain">
+        <label>Your Name: </label>
+        <input type="text" name="yourName">
+        <br>
+        <label>Your Email: </label>
+        <input type="email" name="yourEmail">
+        <br>
+        <label>Your Message: </label><br>
+        <textarea rows="5" cols="33" name="yourMessage"></textarea>
+        <br>
+        <input type="submit">
+    </form>
     </p>
-</body>
 
-</html>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+
+    </html>
