@@ -3,14 +3,14 @@
     <body>
         <div class="bg-orange-500 h-1 w-full"></div>
 
-        <header class="m-8 flex flex-col md:flex-row">
+        <header class="m-8 flex flex-col sm:flex-row">
 
-            <img src="assets/img/tyler.png" alt="Tyler's Profile Picture" class="w-36 h-36 self-center mb-8">
+            <img src="assets/img/tyler.png" alt="Tyler's Profile Picture" class="w-36 h-36 self-center mb-8 mr-8">
 
             <div>
                 <h1>Tyler Stuver</h1>
 
-                <p>Some <span class="line-through">unemployed</span> employed dude learning how to develop for the
+                <p>Some <span class="line-through">unemployed</span> dude learning how to develop for the
                     web.</p>
                 <p class="my-4">
                     <ion-icon name="location-outline" class="text-orange-600"></ion-icon> Orem, Utah
@@ -23,41 +23,52 @@
                     skills as a hobby here and there -- until now.</p>
             </div>
         </header>
-
-        <section class="p-8 bg-slate-200">
-            <h2>Education</h2>
-            <ul>
-                <li class="mt-4 mb-2"><strong><a href="https://highland.slcschools.org/">Highland High
-                            School</a></strong></li>
+        <div class="flex flex-col lg:flex-row">
+            <section class="p-8 bg-slate-200 lg:min-w-max lg:w-1/2">
+                <h2>Education</h2>
                 <ul>
-                    <li class="italic">Attended 2004-2008</li>
-                    <li>Graduated with honors and 3.5 GPA</li>
-                    <li>Took Computer Programming I & II - Learned C++</li>
+                    <li class="mt-4 mb-2"><strong><a href="https://highland.slcschools.org/">Highland High
+                                School</a></strong></li>
+                    <ul>
+                        <li class="italic">Attended 2004-2008</li>
+                        <li>Graduated with honors and 3.5 GPA</li>
+                        <li>Took Computer Programming I & II - Learned C++</li>
+                    </ul>
+                    <li class="mt-4 mb-2"><strong><a href="http://www.slcc.edu/">Salt Lake Community
+                                College</a></strong>
+                    </li>
+                    <ul>
+                        <li class="italic">Attended 2009-2010</li>
+                        <li>Focused on technology and computing courses</li>
+                    </ul>
                 </ul>
-                <li class="mt-4 mb-2"><strong><a href="http://www.slcc.edu/">Salt Lake Community College</a></strong>
-                </li>
-                <ul>
-                    <li class="italic">Attended 2009-2010</li>
-                    <li>Focused on technology and computing courses</li>
-                </ul>
-            </ul>
-        </section>
+            </section>
 
-        <section class="p-8">
-            <h2>Work Experience</h2>
+            <section class="p-8 lg:bg-slate-200 lg:min-w-max lg:w-1/2">
+                <h2>Work Experience</h2>
 
-            <div class="grid grid-cols-3 mt-4 gap-2">
-                <div>2020 - Current</div>
-                <div class="col-span-2">Customer Communications & Social Media <div class="italic text-orange-300">Utah Transit Authority</div></div>
+                <div class="flex flex-col sm:flex-row mt-4">
+                    <div class="w-32 mr-4 italic">2020 - Current</div>
+                    <div class="font-medium">Customer Communications & Social Media <div
+                            class="italic text-orange-600 font-normal">Utah Transit Authority</div>
+                    </div>
+                </div>
 
-                <div>2011 - 2020</div>
-                <div class="col-span-2">Customer Service & Social Media<div class="italic text-orange-300">eBay</div></div>
+                <div class="flex flex-col sm:flex-row mt-4">
+                    <div class="w-32 mr-4 italic">2011 - 2020</div>
+                    <div class="font-medium">Customer Service & Social Media<div
+                            class="italic text-orange-600 font-normal">eBay</div>
+                    </div>
+                </div>
 
-                <div>2007 - 2011</div>
-                <div class="col-span-2">Store Associate & Assistant Manager <div class="italic text-orange-300">Five Buck Pizza</div></div>
-            </div>
-        </section>
-
+                <div class="flex flex-col sm:flex-row mt-4">
+                    <div class="w-32 mr-4 italic">2007 - 2011</div>
+                    <div class="font-medium">Store Associate & Assistant Manager <div
+                            class="italic text-orange-600 font-normal">Five Buck Pizza</div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <hr noshade>
         <h2>Skills</h2>
@@ -91,6 +102,7 @@
         </ol>
 
         <h2><a href="contact/">Contact Me</a></h2>
+
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 
