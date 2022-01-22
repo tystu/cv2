@@ -77,23 +77,23 @@
 
                 <input type="hidden" name="_feedback.success.title" value="Thanks! I've received your contact information.">
 
-                <label class="block font-medium">Name</label>
+                <label class="block font-medium" for="yourName">Name</label>
                 <input
                     class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600 focus:ring-2"
-                    type="text" name="yourName" required>
+                    type="text" id="yourName" name="yourName" required>
 
-                <label class="block font-medium">Email</label>
+                <label class="block font-medium" for="yourEmail">Email</label>
                 <input
                     class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600"
-                    type="email" name="yourEmail" required>
+                    type="email" id="yourEmail" name="yourEmail" required>
 
-                <label class="block font-medium">Message</label>
+                <label class="block font-medium" for="yourMessage">Message</label>
                 <textarea
                     class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600"
-                    rows="5" cols="33" name="yourMessage" required></textarea>
+                    rows="5" cols="33" id="yourMessage" name="yourMessage" required></textarea>
 
                 <input
-                    class="font-medium w-full bg-orange-600 shadow-lg shadow-orange-400 hover:bg-orange-500 active:bg-orange-700 text-orange-100 rounded-xl px-4 py-2 hover:cursor-pointer"
+                    class="font-bold text-xl w-full bg-orange-600 shadow-lg shadow-orange-400 hover:bg-orange-500 active:bg-orange-700 text-orange-50 rounded-xl px-4 py-2 hover:cursor-pointer"
                     type="submit" value="Send" />
             </form>
 

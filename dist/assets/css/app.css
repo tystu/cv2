@@ -790,8 +790,17 @@ select {
   text-align: center;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-normal {
@@ -811,19 +820,24 @@ select {
   color: rgb(154 52 18 / var(--tw-text-opacity));
 }
 
-.text-orange-100 {
+.text-orange-50 {
   --tw-text-opacity: 1;
-  color: rgb(255 237 213 / var(--tw-text-opacity));
+  color: rgb(255 247 237 / var(--tw-text-opacity));
 }
 
-.text-orange-600 {
+.text-orange-700 {
   --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
+  color: rgb(194 65 12 / var(--tw-text-opacity));
 }
 
 .text-slate-800 {
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
 .line-through {
