@@ -42,8 +42,8 @@
     </header>
 
     <nav class="pl-8">
-        <a href="../"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 inline-block" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+        <a href="../"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 inline-block" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
             </svg>Back Home</a>
     </nav>
@@ -68,18 +68,31 @@
                 </svg>801.750.0923</li>
         </ul>
 
-        <form action="mailto:tyler@tylerstuver.dev" enctype="text/plain">
-            <label>Your Name: </label>
-            <input type="text" name="yourName">
-            <br>
-            <label>Your Email: </label>
-            <input type="email" name="yourEmail">
-            <br>
-            <label>Your Message: </label><br>
-            <textarea rows="5" cols="33" name="yourMessage"></textarea>
-            <br>
-            <input type="submit">
-        </form>
+        <div class="flex flex-col items-center"><p class="text-orange-800"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>Form does not currently work</p></div>
+        
+            <!-- Form does NOT actually work  -->
+            <form action="https://mailthis.to/tyler@tylerstuver.dev" method="POST" enctype="multipart/form-data">
+                <label class="block font-medium">Name</label>
+                <input
+                    class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600 focus:ring-2"
+                    type="text" name="yourName">
+
+                <label class="block font-medium">Email</label>
+                <input
+                    class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600"
+                    type="email" name="yourEmail">
+
+                <label class="block font-medium">Message</label>
+                <textarea
+                    class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600"
+                    rows="5" cols="33" name="yourMessage"></textarea>
+
+                <input
+                    class="font-medium w-full bg-orange-600 shadow-lg shadow-orange-400 hover:bg-orange-500 active:bg-orange-700 text-orange-100 rounded-xl px-4 py-2 hover:cursor-pointer"
+                    type="submit" value="Send" />
+            </form>
 
     </main>
 
