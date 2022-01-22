@@ -1,89 +1,93 @@
-<%- include('_partials/_head', { title: "Tyler's Personal Website", root: "" }) %>
+<%- include('_partials/_head', { title: "Tyler's Personal Website" , root: "" }) %>
 
-        <div class="flex flex-col lg:flex-row">
-            <section class="p-8 bg-slate-200 lg:min-w-max lg:w-1/2">
-                <h2>Education</h2>
-                <ul>
-                    <li class="mb-2"><strong><a href="https://highland.slcschools.org/">Highland High
-                                School</a></strong></li>
+    <div class="flex flex-col lg:flex-row">
+        <section class="p-8 bg-slate-200 lg:min-w-max lg:w-1/2">
+            <h2>Education</h2>
+            <ul>
+                <li class="mb-2 font-medium"><a href="https://highland.slcschools.org/">Highland High
+                        School</a></li>
+                <li>
                     <ul>
                         <li class="italic">Attended 2004-2008</li>
                         <li>Graduated with honors and 3.5 GPA</li>
                         <li>Took Computer Programming I & II - Learned C++</li>
                     </ul>
-                    <li class="mt-4 mb-2"><strong><a href="http://www.slcc.edu/">Salt Lake Community
-                                College</a></strong>
-                    </li>
+                </li>
+                <li class="mt-4 mb-2 font-medium"><a href="http://www.slcc.edu/">Salt Lake Community
+                        College</a>
+                </li>
+                <li>
                     <ul>
                         <li class="italic">Attended 2009-2010</li>
                         <li>Focused on technology and computing courses</li>
                     </ul>
-                </ul>
-            </section>
+                </li>
+            </ul>
+        </section>
 
-            <section class="p-8 lg:bg-slate-200 lg:min-w-max lg:w-1/2">
-                <h2>Work Experience</h2>
+        <section class="p-8 lg:bg-slate-200 lg:min-w-max lg:w-1/2">
+            <h2>Work Experience</h2>
 
-                <div class="flex flex-col sm:flex-row">
-                    <div class="w-32 mr-4 italic">2020 - Current</div>
-                    <div class="font-medium">Customer Communications & Social Media <div
-                            class="italic text-orange-600 font-normal">Utah Transit Authority</div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row mt-4">
-                    <div class="w-32 mr-4 italic">2011 - 2020</div>
-                    <div class="font-medium">Customer Service & Social Media<div
-                            class="italic text-orange-600 font-normal">eBay</div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row mt-4">
-                    <div class="w-32 mr-4 italic">2007 - 2011</div>
-                    <div class="font-medium">Store Associate & Assistant Manager <div
-                            class="italic text-orange-600 font-normal">Five Buck Pizza</div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <section class="p-8 bg-slate-200 lg:bg-slate-50">
-
-            <h2>Skills</h2>
             <div class="flex flex-col sm:flex-row">
-                <dl class="mr-8">
-                    <dt>Microsoft Office</dt>
-                    <dd>⭐⭐⭐⭐⭐</dd>
-                    <dt>Social Media</dt>
-                    <dd>⭐⭐⭐⭐</dd>
-                    <dt>Customer Serivce</dt>
-                    <dd>⭐⭐⭐⭐</dd>
-                </dl>
-                <dl>
-                    <dt>Photoshop</dt>
-                    <dd>⭐⭐</dd>
-                    <dt>HTML</dt>
-                    <dd>⭐⭐</dd>
-                    <dt>CSS</dt>
-                    <dd>⭐</dd>
-                </dl>
+                <div class="w-32 mr-4 italic">2020 - Current</div>
+                <div class="font-medium">Customer Communications & Social Media <div
+                        class="italic text-orange-700 font-normal">Utah Transit Authority</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row mt-4">
+                <div class="w-32 mr-4 italic">2011 - 2020</div>
+                <div class="font-medium">Customer Service & Social Media<div class="italic text-orange-700 font-normal">
+                        eBay</div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row mt-4">
+                <div class="w-32 mr-4 italic">2007 - 2011</div>
+                <div class="font-medium">Store Associate & Assistant Manager <div
+                        class="italic text-orange-700 font-normal">Five Buck Pizza</div>
+                </div>
             </div>
         </section>
+    </div>
 
-        <section class="p-8">
-            <h2>Hobbies and Interests</h2>
-            <ol class="leading-loose list-disc list-inside">
-                <li><a href="http://www.reddit.com/r/patientgamers/">PC Gaming</a></li>
-                <li>Learning web development on Udemy</li>
-                <li>Cooking</li>
-            </ol>
-        </section>
+    <section class="p-8 bg-slate-200 lg:bg-slate-50">
 
-        <footer class="text-center p-8">
-            <h2 class="before:content-['•'] after:content-['•']"><a href="contact/" class="mx-4">Contact Me</a></h2>
-        </footer>
+        <h2>Skills</h2>
+        <div class="flex flex-col sm:flex-row">
+            <dl class="mr-8">
+                <dt>Microsoft Office</dt>
+                <dd>⭐⭐⭐⭐⭐</dd>
+                <dt>Social Media</dt>
+                <dd>⭐⭐⭐⭐</dd>
+                <dt>Customer Serivce</dt>
+                <dd>⭐⭐⭐⭐</dd>
+            </dl>
+            <dl>
+                <dt>Photoshop</dt>
+                <dd>⭐⭐</dd>
+                <dt>HTML</dt>
+                <dd>⭐⭐</dd>
+                <dt>CSS</dt>
+                <dd>⭐</dd>
+            </dl>
+        </div>
+    </section>
 
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <section class="p-8">
+        <h2>Hobbies and Interests</h2>
+        <ol class="leading-loose list-disc list-inside">
+            <li><a href="http://www.reddit.com/r/patientgamers/">PC Gaming</a></li>
+            <li>Learning web development on Udemy</li>
+            <li>Cooking</li>
+        </ol>
+    </section>
+
+    <footer class="text-center p-8">
+        <h2 class="before:content-['•'] after:content-['•']"><a href="contact/" class="mx-4">Contact Me</a></h2>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 
     </html>
