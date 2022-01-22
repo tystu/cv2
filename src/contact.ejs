@@ -1,27 +1,61 @@
-<%- include('_partials/_head', { title: "Contact - Tyler's Personal Website" }) %> 
+<%- include('_partials/_head', { title: "Contact - Tyler's Personal Website" , root: "../" }) %>
 
-<body>
-    <h1>Contact Me</h1>
-    <ul>
-        <li>Phone: 801-750-0923</li>
-        <li>Email: tstuver2000@gmail.com</li>
-        <li>Twitter: <a href="http://www.twitter.com/t_stu90">t_stu90</a></li>
-    </ul>
-    <hr>
-    <p>
-        <form action="mailto:tstuver2000@gmail.com" enctype="text/plain">
-            <label>Your Name: </label>
-            <input type="text" name="yourName">
-            <br>
-            <label>Your Email: </label>
-            <input type="email" name="yourEmail">
-            <br>
-            <label>Your Message: </label><br>
-            <textarea rows="5" cols="33" name="yourMessage"></textarea>
-            <br>
-            <input type="submit">
-        </form>
-    </p>
-</body>
+    <nav class="pl-8">
+        <a href="../"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 inline-block" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+            </svg>Back Home</a>
+    </nav>
 
-</html>
+    <main class="p-8">
+        <h1 class="mb-6">Contact Me</h1>
+        <ul class="leading-loose mb-6">
+            <li><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block text-orange-800 mr-4" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20" />
+                </svg><a href="mailto:tyler@tylerstuver.dev">tyler@tylerstuver.dev</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block text-orange-800 mr-4" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                </svg><a href="http://www.twitter.com/ty_stvr">ty_stvr</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block text-orange-800 mr-4" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>801.750.0923</li>
+        </ul>
+
+        <div class="flex flex-col items-center"><p class="text-orange-800"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>Form does not currently work</p></div>
+        
+            <!-- Form does NOT actually work  -->
+            <form action="https://mailthis.to/tyler@tylerstuver.dev" method="POST" enctype="multipart/form-data">
+                <label class="block font-medium">Name</label>
+                <input
+                    class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600 focus:ring-2"
+                    type="text" name="yourName">
+
+                <label class="block font-medium">Email</label>
+                <input
+                    class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600"
+                    type="email" name="yourEmail">
+
+                <label class="block font-medium">Message</label>
+                <textarea
+                    class="w-full rounded-xl border-grey-400 mb-4 hover:border-orange-600 focus:border-orange-600 focus:ring-orange-600"
+                    rows="5" cols="33" name="yourMessage"></textarea>
+
+                <input
+                    class="font-medium w-full bg-orange-600 shadow-lg shadow-orange-400 hover:bg-orange-500 active:bg-orange-700 text-orange-100 rounded-xl px-4 py-2 hover:cursor-pointer"
+                    type="submit" value="Send" />
+            </form>
+
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+
+    </html>

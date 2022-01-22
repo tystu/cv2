@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tystu/cv2#readme",
   "dependencies": {
+    "@tailwindcss/forms": "^0.4.0",
     "ejs": "^3.1.6",
     "tailwindcss": "^3.0.15"
   },

@@ -6,5 +6,7 @@ module.exports = {
       'sans': ['Rubik', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
