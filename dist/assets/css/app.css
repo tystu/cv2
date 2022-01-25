@@ -736,10 +736,6 @@ select {
   flex-direction: column;
 }
 
-.items-center {
-  align-items: center;
-}
-
 .self-center {
   align-self: center;
 }
@@ -943,6 +939,14 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -953,8 +957,20 @@ p {
     min-width: max-content;
   }
 
+  .lg\:max-w-sm {
+    max-width: 24rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:bg-slate-200 {
