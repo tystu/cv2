@@ -724,6 +724,10 @@ select {
   width: 9rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -942,6 +946,10 @@ p {
     width: 100%;
   }
 
+  .lg\:w-\[448px\] {
+    width: 448px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -950,10 +958,6 @@ p {
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
-  }
-
-  .lg\:max-w-sm {
-    max-width: 24rem;
   }
 
   .lg\:flex-row {
